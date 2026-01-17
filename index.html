@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Images/logo image.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Delicious Bites</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#orders" class="nav-link">Orders</a></li>
+                <li><a href="#tables" class="nav-link">Tables</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Welcome to Delicious Bites</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Experience the finest culinary delights</p>
+            <button class="btn-primary animate-bounce-in">Explore Menu</button>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2 class="section-title">Dashboard Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card animate-slide-up">
+                    <div class="stat-icon">📊</div>
+                    <h3 class="stat-number" data-target="156">0</h3>
+                    <p class="stat-label">Total Orders</p>
+                </div>
+                <div class="stat-card animate-slide-up">
+                    <div class="stat-icon">💰</div>
+                    <h3 class="stat-number" data-target="45230">0</h3>
+                    <p class="stat-label">Revenue (₹)</p>
+                </div>
+                <div class="stat-card animate-slide-up">
+                    <div class="stat-icon">👥</div>
+                    <h3 class="stat-number" data-target="89">0</h3>
+                    <p class="stat-label">Active Customers</p>
+                </div>
+                <div class="stat-card animate-slide-up">
+                    <div class="stat-icon">🍽️</div>
+                    <h3 class="stat-number" data-target="12">0</h3>
+                    <p class="stat-label">Available Tables</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="appetizer">Appetizers</button>
+                <button class="filter-btn" data-filter="main">Main Course</button>
+                <button class="filter-btn" data-filter="dessert">Desserts</button>
+                <button class="filter-btn" data-filter="drink">Drinks</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/1.jpg" alt="Dish 1" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Spring Rolls</h3>
+                        <p class="menu-description">Crispy vegetable spring rolls with sweet chili sauce</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹180</span>
+                            <span class="menu-rating">⭐ 4.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/2.jpg" alt="Dish 2" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Grilled Chicken</h3>
+                        <p class="menu-description">Tender grilled chicken with herbs and spices</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹450</span>
+                            <span class="menu-rating">⭐ 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/3.jpg" alt="Dish 3" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Pasta Primavera</h3>
+                        <p class="menu-description">Fresh pasta with seasonal vegetables</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹320</span>
+                            <span class="menu-rating">⭐ 4.6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="dessert">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/4.webp" alt="Dish 4" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Chocolate Cake</h3>
+                        <p class="menu-description">Rich chocolate cake with cream frosting</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹250</span>
+                            <span class="menu-rating">⭐ 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/5.jpg" alt="Dish 5" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Beef Steak</h3>
+                        <p class="menu-description">Premium beef steak cooked to perfection</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹680</span>
+                            <span class="menu-rating">⭐ 4.7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="drink">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/6.webp" alt="Dish 6" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Fresh Juice</h3>
+                        <p class="menu-description">Freshly squeezed seasonal fruit juice</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹120</span>
+                            <span class="menu-rating">⭐ 4.4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="appetizer">
+                    <div class="menu-image-wrapper">
+                        <img src="Images/7.jpg" alt="Dish 7" class="menu-image">
+                        <div class="menu-overlay">
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Caesar Salad</h3>
+                        <p class="menu-description">Fresh romaine lettuce with caesar dressing</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">₹200</span>
+                            <span class="menu-rating">⭐ 4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="orders-section">
+        <div class="container">
+            <h2 class="section-title">Order Management</h2>
+            <div class="orders-container">
+                <div class="orders-list">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #001</span>
+                            <span class="order-status status-pending">Pending</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Spring Rolls x2, Grilled Chicken x1</p>
+                        </div>
+                        <div class="order-footer">
+                            <span class="order-total">Total: ₹810</span>
+                            <button class="btn-process">Process Order</button>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #002</span>
+                            <span class="order-status status-preparing">Preparing</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Pasta Primavera x1, Fresh Juice x2</p>
+                        </div>
+                        <div class="order-footer">
+                            <span class="order-total">Total: ₹560</span>
+                            <button class="btn-process">Ready</button>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #003</span>
+                            <span class="order-status status-ready">Ready</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Beef Steak x1, Chocolate Cake x1</p>
+                        </div>
+                        <div class="order-footer">
+                            <span class="order-total">Total: ₹930</span>
+                            <button class="btn-process">Complete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables" class="tables-section">
+        <div class="container">
+            <h2 class="section-title">Table Management</h2>
+            <div class="tables-grid">
+                <div class="table-card available">
+                    <div class="table-number">Table 1</div>
+                    <div class="table-status">Available</div>
+                    <div class="table-capacity">Capacity: 4</div>
+                    <button class="btn-reserve">Reserve</button>
+                </div>
+                <div class="table-card occupied">
+                    <div class="table-number">Table 2</div>
+                    <div class="table-status">Occupied</div>
+                    <div class="table-capacity">Capacity: 6</div>
+                    <button class="btn-reserve" disabled>Occupied</button>
+                </div>
+                <div class="table-card available">
+                    <div class="table-number">Table 3</div>
+                    <div class="table-status">Available</div>
+                    <div class="table-capacity">Capacity: 2</div>
+                    <button class="btn-reserve">Reserve</button>
+                </div>
+                <div class="table-card reserved">
+                    <div class="table-number">Table 4</div>
+                    <div class="table-status">Reserved</div>
+                    <div class="table-capacity">Capacity: 4</div>
+                    <button class="btn-reserve" disabled>Reserved</button>
+                </div>
+                <div class="table-card available">
+                    <div class="table-number">Table 5</div>
+                    <div class="table-status">Available</div>
+                    <div class="table-capacity">Capacity: 8</div>
+                    <button class="btn-reserve">Reserve</button>
+                </div>
+                <div class="table-card occupied">
+                    <div class="table-number">Table 6</div>
+                    <div class="table-status">Occupied</div>
+                    <div class="table-capacity">Capacity: 4</div>
+                    <button class="btn-reserve" disabled>Occupied</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Delicious Bites Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: ₹<span id="cartTotal">0</span></span>
+            </div>
+            <button class="btn-checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Button -->
+    <button class="cart-button" id="cartButton">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
